@@ -69,14 +69,32 @@ Visit [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser to start in
 ```
 lyra/
 ├── web_app.py
-├── models/
-│   ├── chat_model.py
-│   └── OpenHermes/
-│       └── openhermes-2.5-mistral-7b.Q4_K_M.gguf
-├── static/
-├── templates/
 ├── environment.yml
-└── README.md
+├── history.txt
+├── README.md
+├── README_zh.md
+├── .gitignore
+│
+├── models/
+│   ├── asr_model.py
+│   ├── chat_model.py
+│   ├── tts_model.py
+│   └── OpenHermes/
+│       └── openhermes-2.5-mistral-7b.Q4_K_M.gguf  # (manually placed if needed)
+│
+├── static/
+│   ├── audio/               # stores generated voice files
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── main.js
+│
+├── templates/
+│   └── index.html
+│
+└── utils/
+    ├── emotion.py
+    └── persona.py
 ```
 
 ---

@@ -69,14 +69,33 @@ python web_app.py
 ```
 lyra/
 ├── web_app.py
-├── models/
-│   ├── chat_model.py
-│   └── OpenHermes/
-│       └── openhermes-2.5-mistral-7b.Q4_K_M.gguf
-├── static/
-├── templates/
 ├── environment.yml
-└── README_zh.md
+├── history.txt
+├── README.md
+├── README_zh.md
+├── .gitignore
+│
+├── models/
+│   ├── asr_model.py
+│   ├── chat_model.py
+│   ├── tts_model.py
+│   └── OpenHermes/
+│       └── openhermes-2.5-mistral-7b.Q4_K_M.gguf  # 如有，手动放置
+│
+├── static/
+│   ├── audio/               # 存放语音文件
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── main.js
+│
+├── templates/
+│   └── index.html
+│
+└── utils/
+    ├── emotion.py
+    └── persona.py
+
 ```
 
 ---
